@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilayah & Demografi Distrik Sorong Timur - Pemerintah Kota Sorong</title>
+    <meta name="description" content="Informasi geografis, batas wilayah, peta interaktif, dan data demografi kependudukan 4 kelurahan di Distrik Sorong Timur, Kota Sorong, Papua Barat Daya.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo-distrik.svg">
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6.5.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Modern Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div class="d-flex align-items-center flex-wrap gap-3">
+                    <span class="topbar-badge">
+                        <i class="fa-solid fa-shield-halved"></i> Portal Resmi Pemkot Sorong
+                    </span>
+                    <span class="d-none d-md-inline small text-light opacity-75">
+                        <i class="fa-regular fa-clock me-1 text-warning"></i> Jam Layanan: Sen - Jum 08.00 - 15.30 WIT
+                    </span>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <span id="live-time-ticker" class="small text-light opacity-90 d-none d-sm-inline">
+                        <i class="fa-solid fa-location-dot me-1 text-danger"></i> Sorong Timur, WIT
+                    </span>
+                    <span class="topbar-divider d-none d-sm-inline"></span>
+                    <a href="tel:0951123456" class="small"><i class="fa-solid fa-phone me-1"></i> (0951) 123-456</a>
+                    <span class="topbar-divider"></span>
+                    <a href="kontak.html" class="small"><i class="fa-solid fa-envelope me-1"></i> Bantuan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER & NAVBAR -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="brand-logo-wrap">
+                        <img src="assets/img/logo-distrik.svg" alt="Lambang Distrik Sorong Timur" width="40" height="40">
+                    </div>
+                    <div>
+                        <div class="brand-text-title">DISTRIK SORONG TIMUR</div>
+                        <div class="brand-text-sub">Kota Sorong • Papua Barat Daya</div>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Profil
+                            </a>
+                            <ul class="dropdown-menu shadow-lg border-0" aria-labelledby="profilDropdown">
+                                <li><a class="dropdown-item" href="sejarah.html"><i class="fa-solid fa-landmark text-primary"></i> Sejarah Distrik</a></li>
+                                <li><a class="dropdown-item" href="visi-misi.html"><i class="fa-solid fa-bullseye text-primary"></i> Visi & Misi</a></li>
+                                <li><a class="dropdown-item" href="organisasi.html"><i class="fa-solid fa-sitemap text-primary"></i> Struktur Organisasi</a></li>
+                                <li><a class="dropdown-item active" href="wilayah.html"><i class="fa-solid fa-map-location-dot text-primary"></i> Wilayah & Kelurahan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#layanan-paten">Layanan Publik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="wilayah.html">Kelurahan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#berita">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeri.html">Galeri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontak.html">Kontak</a>
+                        </li>
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <a href="https://wa.me/6281234567890" target="_blank" class="btn-nav-cta">
+                                <i class="fa-brands fa-whatsapp fs-6"></i> Sapa Distrik
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero-modern">
+        <div class="page-hero-pattern"></div>
+        <div class="container position-relative">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fa-solid fa-house me-1"></i> Beranda</a></li>
+                    <li class="breadcrumb-item">Profil</li>
+                    <li class="breadcrumb-item active" aria-current="page">Wilayah & Kelurahan</li>
+                </ol>
+            </nav>
+            <h1 class="display-5 fw-bold mb-2">Wilayah & Demografi</h1>
+            <p class="fs-6 text-light opacity-80 mb-0" style="max-width: 650px;">
+                Eksplorasi geografis, batas teritorial, peta lokasi, serta data kependudukan resmi 4 kelurahan di Distrik Sorong Timur.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="py-5 bg-white">
+        <div class="container py-lg-4">
+            <!-- PETA & GEOGRAFIS -->
+            <div class="row g-5 align-items-center mb-5">
+                <div class="col-lg-6">
+                    <span class="section-badge"><i class="fa-solid fa-earth-asia"></i> Geografis & Teritorial</span>
+                    <h2 class="fs-2 fw-bold mb-3">Peta Wilayah Distrik Sorong Timur</h2>
+                    <p class="text-muted leading-relaxed mb-4">
+                        Secara geografis, Distrik Sorong Timur terletak di kawasan timur Kota Sorong dengan topografi kombinasi pesisir pantai selatan (Selat Sele), kawasan daratan rendah berhawa tropis, dan perbukitan hijau. Wilayah ini memiliki peran sentral sebagai pintu gerbang penghubung Kota Sorong dengan Kabupaten Sorong dan daerah sekitarnya di Provinsi Papua Barat Daya.
+                    </p>
+
+                    <!-- Batas Wilayah Card -->
+                    <div class="p-4 rounded-4 border bg-light">
+                        <h4 class="fs-6 fw-bold mb-3 text-dark"><i class="fa-solid fa-compass text-primary me-2"></i> Batas-Batas Wilayah:</h4>
+                        <div class="row g-2 small">
+                            <div class="col-sm-6">
+                                <div class="bg-white p-2 rounded-2 border">
+                                    <span class="text-muted">Utara:</span>
+                                    <strong class="d-block text-dark">Distrik Sorong Utara</strong>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="bg-white p-2 rounded-2 border">
+                                    <span class="text-muted">Selatan:</span>
+                                    <strong class="d-block text-dark">Selat Sele & Pesisir</strong>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="bg-white p-2 rounded-2 border">
+                                    <span class="text-muted">Timur:</span>
+                                    <strong class="d-block text-dark">Kabupaten Sorong (Aimas)</strong>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="bg-white p-2 rounded-2 border">
+                                    <span class="text-muted">Barat:</span>
+                                    <strong class="d-block text-dark">Distrik Sorong Manoi / Kota</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Google Maps Container -->
+                    <div class="rounded-4 overflow-hidden shadow-lg border" style="height: 420px; position: relative;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.47963212876!2d131.3101235!3d-0.8987412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d59556d78772a5b%3A0x6b290dfc6ff4d2c8!2sKantor%20Distrik%20Sorong%20Timur!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Peta Lokasi Kantor Distrik Sorong Timur">
+                        </iframe>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-2 small text-muted">
+                        <span><i class="fa-solid fa-location-dot text-danger me-1"></i> Kantor Distrik Sorong Timur, Jl. Poros Km. 10</span>
+                        <a href="https://maps.google.com/?q=Kantor+Distrik+Sorong+Timur" target="_blank" class="fw-bold text-primary">
+                            Buka di Google Maps <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROFIL 4 KELURAHAN DETAIL -->
+            <div class="my-5 pt-3">
+                <div class="text-center mb-5">
+                    <span class="section-badge"><i class="fa-solid fa-city"></i> Profil Administrasi</span>
+                    <h2 class="section-title">4 Kelurahan di Distrik Sorong Timur</h2>
+                    <p class="section-desc mx-auto">
+                        Masing-masing kelurahan memiliki karakteristik wilayah, potensi ekonomi, dan sentra pelayanan kependudukan terdekat bagi warga.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Kelurahan 1: Klawuyuk -->
+                    <div class="col-md-6" id="kel-klawuyuk">
+                        <div class="p-4 rounded-4 border bg-light h-100 shadow-sm">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary px-3 py-2 rounded-pill">Pusat Pemerintahan Distrik</span>
+                                <span class="small text-muted fw-bold">Kode: 96.71.03.1001</span>
+                            </div>
+                            <h3 class="fs-4 fw-bold mb-2">Kelurahan Klawuyuk</h3>
+                            <p class="text-muted small leading-relaxed mb-3">
+                                Kelurahan Klawuyuk adalah pusat administrasi Distrik Sorong Timur di mana Kantor Distrik berada di koridor Jalan Poros Km 10. Wilayah ini merupakan kawasan hunian padat penduduk dengan pusat fasilitas umum, layanan perbankan, puskesmas pembantu, dan akses transportasi vital.
+                            </p>
+                            <div class="row g-2 small border-top pt-3">
+                                <div class="col-6"><strong>Tipologi:</strong> Perkotaan & Jasa</div>
+                                <div class="col-6"><strong>Sentra:</strong> Fasilitas Umum & Niaga</div>
+                                <div class="col-12 mt-1 text-primary fw-semibold"><i class="fa-solid fa-location-dot me-1"></i> Lokasi Kantor Lurah: Jl. Poros Km 10</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kelurahan 2: Klawalu -->
+                    <div class="col-md-6" id="kel-klawalu">
+                        <div class="p-4 rounded-4 border bg-light h-100 shadow-sm">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-success px-3 py-2 rounded-pill">Kawasan Ekowisata Mangrove</span>
+                                <span class="small text-muted fw-bold">Kode: 96.71.03.1002</span>
+                            </div>
+                            <h3 class="fs-4 fw-bold mb-2">Kelurahan Klawalu</h3>
+                            <p class="text-muted small leading-relaxed mb-3">
+                                Kelurahan Klawalu terkenal secara nasional sebagai lokasi <strong>Taman Wisata Mangrove Klawalu</strong>, salah satu destinasi ekowisata mangrove terbesar di Tanah Papua. Memiliki pesisir yang menghadap Selat Sele dengan mata pencaharian warga nelayan dan pegiat pariwisata bahari.
+                            </p>
+                            <div class="row g-2 small border-top pt-3">
+                                <div class="col-6"><strong>Tipologi:</strong> Pesisir & Konservasi</div>
+                                <div class="col-6"><strong>Potensi:</strong> Pariwisata & Perikanan</div>
+                                <div class="col-12 mt-1 text-success fw-semibold"><i class="fa-solid fa-tree me-1"></i> Ikon: Mangrove Park Klawalu</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kelurahan 3: Kladufu -->
+                    <div class="col-md-6" id="kel-kladufu">
+                        <div class="p-4 rounded-4 border bg-light h-100 shadow-sm">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-warning text-dark px-3 py-2 rounded-pill">Sentra Usaha & Niaga UMKM</span>
+                                <span class="small text-muted fw-bold">Kode: 96.71.03.1003</span>
+                            </div>
+                            <h3 class="fs-4 fw-bold mb-2">Kelurahan Kladufu</h3>
+                            <p class="text-muted small leading-relaxed mb-3">
+                                Kelurahan Kladufu merupakan kawasan sentra aktivitas perdagangan mikro, aneka kuliner lokal, pasar rakyat, dan usaha jasa. Pertumbuhan perumahan dan interaksi sosial masyarakat yang majemuk menjadikan Kladufu salah satu pusat denyut ekonomi Sorong Timur.
+                            </p>
+                            <div class="row g-2 small border-top pt-3">
+                                <div class="col-6"><strong>Tipologi:</strong> Perdagangan & Hunian</div>
+                                <div class="col-6"><strong>Potensi:</strong> Kuliner & UMKM</div>
+                                <div class="col-12 mt-1 text-warning-emphasis fw-semibold"><i class="fa-solid fa-store me-1"></i> Sentra: Ruko Perdagangan & Pasar</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kelurahan 4: Klamana -->
+                    <div class="col-md-6" id="kel-klamana">
+                        <div class="p-4 rounded-4 border bg-light h-100 shadow-sm">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-info text-dark px-3 py-2 rounded-pill">Pendidikan & Perumahan Baru</span>
+                                <span class="small text-muted fw-bold">Kode: 96.71.03.1004</span>
+                            </div>
+                            <h3 class="fs-4 fw-bold mb-2">Kelurahan Klamana</h3>
+                            <p class="text-muted small leading-relaxed mb-3">
+                                Kelurahan Klamana merupakan kawasan pemukiman yang terus berkembang pesat ke arah daratan. Dikelilingi fasilitas sarana pendidikan menengah dan perguruan tinggi, perumahan asri, dan pengembangan sarana penunjang perkotaan baru.
+                            </p>
+                            <div class="row g-2 small border-top pt-3">
+                                <div class="col-6"><strong>Tipologi:</strong> Hunian & Pendidikan</div>
+                                <div class="col-6"><strong>Potensi:</strong> Perumahan & Sarana Belajar</div>
+                                <div class="col-12 mt-1 text-primary fw-semibold"><i class="fa-solid fa-graduation-cap me-1"></i> Sentra: Sarana Pendidikan & Residensial</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEMOGRAFI & DATA BPS KOTA SORONG -->
+            <div class="my-5 pt-3">
+                <div class="text-center mb-4">
+                    <span class="section-badge badge-gold"><i class="fa-solid fa-chart-column"></i> Data Statistik Resmi</span>
+                    <h2 class="section-title">Indikator Kependudukan & Demografi</h2>
+                    <p class="section-desc mx-auto">
+                        Ringkasan data Badan Pusat Statistik (BPS) Kota Sorong dan Dinas Kependudukan dan Catatan Sipil Kota Sorong.
+                    </p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="table-responsive rounded-4 shadow-sm border overflow-hidden">
+                            <table class="table table-hover align-middle mb-0">
+                                <thead style="background: linear-gradient(90deg, var(--primary-900), var(--primary-800)); color: white;">
+                                    <tr>
+                                        <th scope="col" class="py-3 px-4">Indikator Wilayah</th>
+                                        <th scope="col" class="py-3 px-4 text-center">Data / Angka</th>
+                                        <th scope="col" class="py-3 px-4">Keterangan / Sumber</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="py-3 px-4 fw-semibold"><i class="fa-solid fa-vector-square text-primary me-2"></i> Luas Wilayah Daratan</td>
+                                        <td class="py-3 px-4 text-center fw-bold text-primary">69,39 Km²</td>
+                                        <td class="py-3 px-4 text-muted small">6,28% dari total luas Kota Sorong</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 fw-semibold"><i class="fa-solid fa-users text-primary me-2"></i> Total Estimasi Penduduk</td>
+                                        <td class="py-3 px-4 text-center fw-bold text-dark">41.250 Jiwa</td>
+                                        <td class="py-3 px-4 text-muted small">BPS Kota Sorong & Disdukcapil</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 fw-semibold"><i class="fa-solid fa-mars text-info me-2"></i> Jumlah Laki-laki</td>
+                                        <td class="py-3 px-4 text-center fw-bold text-dark">21.180 Jiwa</td>
+                                        <td class="py-3 px-4 text-muted small">Rasio Jenis Kelamin 105,4</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 fw-semibold"><i class="fa-solid fa-venus text-danger me-2"></i> Jumlah Perempuan</td>
+                                        <td class="py-3 px-4 text-center fw-bold text-dark">20.070 Jiwa</td>
+                                        <td class="py-3 px-4 text-muted small">Komposisi seimbang</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 fw-semibold"><i class="fa-solid fa-people-roof text-success me-2"></i> Kepala Keluarga (KK)</td>
+                                        <td class="py-3 px-4 text-center fw-bold text-dark">11.850 KK</td>
+                                        <td class="py-3 px-4 text-muted small">Tersebar di 4 kelurahan</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 fw-semibold"><i class="fa-solid fa-compress text-warning me-2"></i> Kepadatan Penduduk</td>
+                                        <td class="py-3 px-4 text-center fw-bold text-dark">~594 Jiwa/Km²</td>
+                                        <td class="py-3 px-4 text-muted small">Kepadatan tertinggi di Kel. Klawuyuk</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 fw-semibold"><i class="fa-solid fa-briefcase text-secondary me-2"></i> Mata Pencaharian Utama</td>
+                                        <td class="py-3 px-4 text-center fw-bold text-dark">Multi-Sektor</td>
+                                        <td class="py-3 px-4 text-muted small">ASN/TNI/Polri, Perdagangan, Jasa, Nelayan & Pertanian</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-end text-muted small mt-2">
+                            * Data diperbarui berdasarkan publikasi <em>Kota Sorong Dalam Angka</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/img/logo-distrik.svg" alt="Logo Distrik Sorong Timur" width="44" height="44">
+                        <div>
+                            <div class="footer-brand-title">DISTRIK SORONG TIMUR</div>
+                            <div class="text-warning small fw-semibold">Pemerintah Kota Sorong • Papua Barat Daya</div>
+                        </div>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 leading-relaxed">
+                        Mewujudkan Distrik Sorong Timur yang maju, inklusif, dan berbudaya dengan mengedepankan kearifan lokal serta tata kelola pemerintahan yang transparan.
+                    </p>
+                    <div class="small text-light opacity-75 mb-2">
+                        <i class="fa-solid fa-location-dot me-2 text-warning"></i> Jalan Poros, Km. 10, Kelurahan Klawuyuk, Kota Sorong, Papua Barat Daya 98416
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-heading">Navigasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="sejarah.html">Sejarah Distrik</a></li>
+                        <li><a href="visi-misi.html">Visi & Misi</a></li>
+                        <li><a href="organisasi.html">Struktur Organisasi</a></li>
+                        <li><a href="wilayah.html">Wilayah Demografi</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5 class="footer-heading">4 Kelurahan</h5>
+                    <ul class="footer-links">
+                        <li><a href="wilayah.html#kel-klawuyuk">Kelurahan Klawuyuk</a></li>
+                        <li><a href="wilayah.html#kel-klawalu">Kelurahan Klawalu</a></li>
+                        <li><a href="wilayah.html#kel-kladufu">Kelurahan Kladufu</a></li>
+                        <li><a href="wilayah.html#kel-klamana">Kelurahan Klamana</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Layanan Kontak</h5>
+                    <div class="small text-light opacity-80 mb-3">
+                        Senin - Jumat: 08.00 - 15.30 WIT<br>
+                        Telp: (0951) 123-456<br>
+                        Email: info@sorongtimur.go.id
+                    </div>
+                    <a href="kontak.html" class="btn btn-outline-light btn-sm rounded-pill px-3">
+                        <i class="fa-solid fa-headset me-1"></i> Hubungi Helpdesk
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <div>&copy; 2026 Kantor Distrik Sorong Timur. Semua Hak Cipta Dilindungi.</div>
+                <div class="small">Pemerintah Kota Sorong, Papua Barat Daya</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function updateLiveClock() {
+            const ticker = document.getElementById('live-time-ticker');
+            if (!ticker) return;
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Jayapura' };
+            const formatter = new Intl.DateTimeFormat('id-ID', options);
+            ticker.innerHTML = `<i class="fa-solid fa-clock me-1 text-warning"></i> ${formatter.format(now)} WIT`;
+        }
+        setInterval(updateLiveClock, 1000);
+        updateLiveClock();
+    </script>
+</body>
+</html>

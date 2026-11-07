@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak & Pengaduan - Kantor Distrik Sorong Timur</title>
+    <meta name="description" content="Hubungi Kantor Distrik Sorong Timur, Kota Sorong, Papua Barat Daya. Layanan konsultasi publik, hotline WhatsApp, nomor darurat, dan peta lokasi kantor.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo-distrik.svg">
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6.5.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Modern Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div class="d-flex align-items-center flex-wrap gap-3">
+                    <span class="topbar-badge">
+                        <i class="fa-solid fa-shield-halved"></i> Portal Resmi Pemkot Sorong
+                    </span>
+                    <span class="d-none d-md-inline small text-light opacity-75">
+                        <i class="fa-regular fa-clock me-1 text-warning"></i> Jam Layanan: Sen - Jum 08.00 - 15.30 WIT
+                    </span>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <span id="live-time-ticker" class="small text-light opacity-90 d-none d-sm-inline">
+                        <i class="fa-solid fa-location-dot me-1 text-danger"></i> Sorong Timur, WIT
+                    </span>
+                    <span class="topbar-divider d-none d-sm-inline"></span>
+                    <a href="tel:0951123456" class="small"><i class="fa-solid fa-phone me-1"></i> (0951) 123-456</a>
+                    <span class="topbar-divider"></span>
+                    <a href="kontak.html" class="small"><i class="fa-solid fa-envelope me-1"></i> Bantuan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER & NAVBAR -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="brand-logo-wrap">
+                        <img src="assets/img/logo-distrik.svg" alt="Lambang Distrik Sorong Timur" width="40" height="40">
+                    </div>
+                    <div>
+                        <div class="brand-text-title">DISTRIK SORONG TIMUR</div>
+                        <div class="brand-text-sub">Kota Sorong • Papua Barat Daya</div>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Profil
+                            </a>
+                            <ul class="dropdown-menu shadow-lg border-0" aria-labelledby="profilDropdown">
+                                <li><a class="dropdown-item" href="sejarah.html"><i class="fa-solid fa-landmark text-primary"></i> Sejarah Distrik</a></li>
+                                <li><a class="dropdown-item" href="visi-misi.html"><i class="fa-solid fa-bullseye text-primary"></i> Visi & Misi</a></li>
+                                <li><a class="dropdown-item" href="organisasi.html"><i class="fa-solid fa-sitemap text-primary"></i> Struktur Organisasi</a></li>
+                                <li><a class="dropdown-item" href="wilayah.html"><i class="fa-solid fa-map-location-dot text-primary"></i> Wilayah & Kelurahan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#layanan-paten">Layanan Publik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="wilayah.html">Kelurahan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#berita">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeri.html">Galeri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="kontak.html">Kontak</a>
+                        </li>
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <a href="https://wa.me/6281234567890" target="_blank" class="btn-nav-cta">
+                                <i class="fa-brands fa-whatsapp fs-6"></i> Sapa Distrik
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero-modern">
+        <div class="page-hero-pattern"></div>
+        <div class="container position-relative">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fa-solid fa-house me-1"></i> Beranda</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Kontak</li>
+                </ol>
+            </nav>
+            <h1 class="display-5 fw-bold mb-2">Hubungi Kantor Distrik</h1>
+            <p class="fs-6 text-light opacity-80 mb-0" style="max-width: 650px;">
+                Sampaikan permohonan informasi, konsultasi berkas administrasi, kritik, atau aduan masyarakat secara langsung kepada petugas kami.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="py-5 bg-white">
+        <div class="container py-lg-4">
+            <div class="row g-5">
+                <!-- FORMULIR KONTAK & KONSULTASI -->
+                <div class="col-lg-7">
+                    <div class="p-4 p-md-5 rounded-4 border bg-light shadow-sm">
+                        <span class="section-badge"><i class="fa-solid fa-envelope-open-text"></i> Formulir Layanan</span>
+                        <h2 class="fs-3 fw-bold mb-2">Kirim Pesan atau Konsultasi</h2>
+                        <p class="text-muted small mb-4">
+                            Isi formulir di bawah ini dengan lengkap. Tim helpdesk pelayanan kami akan membalas pesan Anda ke email atau nomor WhatsApp yang dicantumkan.
+                        </p>
+
+                        <!-- Alert Box for JS Confirmation -->
+                        <div id="contactAlert" class="alert alert-success d-none rounded-3 small" role="alert">
+                            <i class="fa-solid fa-circle-check me-2"></i> Terima kasih! Pesan Anda telah terkirim. Petugas kami akan segera menindaklanjuti.
+                        </div>
+
+                        <form id="contactForm" class="row g-3" onsubmit="handleContactSubmit(event)">
+                            <div class="col-md-6">
+                                <label for="namaLengkap" class="form-label small fw-bold text-dark">Nama Lengkap *</label>
+                                <input type="text" class="form-control form-control-modern" id="namaLengkap" placeholder="Contoh: Dominggus Kambuaya" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="nomorHp" class="form-label small fw-bold text-dark">Nomor WhatsApp / HP *</label>
+                                <input type="tel" class="form-control form-control-modern" id="nomorHp" placeholder="08xxxxxxxxxx" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="emailUser" class="form-label small fw-bold text-dark">Alamat Email</label>
+                                <input type="email" class="form-control form-control-modern" id="emailUser" placeholder="nama@email.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="kelurahanAsal" class="form-label small fw-bold text-dark">Kelurahan Asal *</label>
+                                <select class="form-select form-control-modern" id="kelurahanAsal" required>
+                                    <option value="" selected disabled>Pilih Kelurahan Anda</option>
+                                    <option value="Klawuyuk">Kelurahan Klawuyuk</option>
+                                    <option value="Klawalu">Kelurahan Klawalu</option>
+                                    <option value="Kladufu">Kelurahan Kladufu</option>
+                                    <option value="Klamana">Kelurahan Klamana</option>
+                                    <option value="Luar Distrik">Luar Distrik Sorong Timur</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="kategoriLayanan" class="form-label small fw-bold text-dark">Kategori Keperluan *</label>
+                                <select class="form-select form-control-modern" id="kategoriLayanan" required>
+                                    <option value="" selected disabled>Pilih Kategori Keperluan</option>
+                                    <option value="PATEN">Konsultasi Layanan PATEN (KTP, KK, Domisili, SKTM)</option>
+                                    <option value="Perizinan">Rekomendasi Izin Usaha / Izin Keramaian</option>
+                                    <option value="Aduan">Pengaduan / Laporan Fasilitas Umum</option>
+                                    <option value="PPID">Permohonan Informasi Publik (PPID)</option>
+                                    <option value="Lainnya">Keperluan Lainnya</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="isiPesan" class="form-label small fw-bold text-dark">Isi Pesan / Rincian Pertanyaan *</label>
+                                <textarea class="form-control form-control-modern" id="isiPesan" rows="5" placeholder="Tuliskan pesan, kronologi pengaduan, atau pertanyaan berkas yang ingin Anda tanyakan..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5 fw-bold shadow">
+                                    <i class="fa-solid fa-paper-plane me-2"></i> Kirim Pesan Sekarang
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- KARTU INFORMASI KONTAK RESMI -->
+                <div class="col-lg-5">
+                    <div class="contact-info-card mb-4">
+                        <span class="badge bg-warning text-dark px-3 py-1 rounded-pill fw-bold mb-3">
+                            <i class="fa-solid fa-headset me-1"></i> PUSAT INFORMASI
+                        </span>
+                        <h3 class="fs-4 fw-bold text-white mb-4">Kontak Resmi Kantor Distrik</h3>
+
+                        <div class="contact-item-row">
+                            <div class="contact-item-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h5 class="fs-6 fw-bold mb-1 text-white">Alamat Kantor</h5>
+                                <p class="small text-light opacity-80 mb-0">
+                                    Jalan Poros, Km. 10, Kelurahan Klawuyuk, Distrik Sorong Timur, Kota Sorong, Papua Barat Daya 98416
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-row">
+                            <div class="contact-item-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5 class="fs-6 fw-bold mb-1 text-white">Telepon Kantor</h5>
+                                <p class="small text-light opacity-80 mb-0">
+                                    (0951) 123-456
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-row">
+                            <div class="contact-item-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h5 class="fs-6 fw-bold mb-1 text-white">Hotline WhatsApp (Sapa Distrik)</h5>
+                                <p class="small text-light opacity-80 mb-2">
+                                    +62 812-3456-7890 (Respon cepat jam kerja)
+                                </p>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Distrik%20Sorong%20Timur,%20saya%20butuh%20bantuan" target="_blank" class="btn btn-sm btn-success rounded-pill px-3 fw-bold">
+                                    Chat WhatsApp Langsung <i class="fa-solid fa-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-row">
+                            <div class="contact-item-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5 class="fs-6 fw-bold mb-1 text-white">Email Resmi</h5>
+                                <p class="small text-light opacity-80 mb-0">
+                                    distrik.sorongtimur@sorongkota.go.id
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-row mb-0">
+                            <div class="contact-item-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h5 class="fs-6 fw-bold mb-1 text-white">Jam Kerja Pelayanan</h5>
+                                <p class="small text-light opacity-80 mb-0">
+                                    Senin - Kamis: 08.00 - 15.30 WIT<br>
+                                    Jumat: 08.00 - 15.00 WIT<br>
+                                    <span class="text-warning">Sabtu & Minggu: Libur Pelayanan</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NOMOR DARURAT DISTRIK -->
+                    <div class="p-4 rounded-4 border bg-light">
+                        <h4 class="fs-6 fw-bold mb-3 text-dark"><i class="fa-solid fa-phone-volume text-danger me-2"></i> Nomor Darurat Wilayah:</h4>
+                        <div class="row g-2 small">
+                            <div class="col-6">
+                                <div class="bg-white p-2 rounded-2 border">
+                                    <span class="text-muted d-block">Polsek Sorong Timur:</span>
+                                    <strong class="text-dark">(0951) 321-110</strong>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="bg-white p-2 rounded-2 border">
+                                    <span class="text-muted d-block">Puskesmas Klawuyuk:</span>
+                                    <strong class="text-dark">(0951) 322-220</strong>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="bg-white p-2 rounded-2 border">
+                                    <span class="text-muted d-block">Pemadam Kebakaran:</span>
+                                    <strong class="text-dark">113</strong>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="bg-white p-2 rounded-2 border">
+                                    <span class="text-muted d-block">Panggilan Darurat:</span>
+                                    <strong class="text-dark">112</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PETA LOKASI KANTOR -->
+            <div class="mt-5 pt-4">
+                <div class="text-center mb-4">
+                    <span class="section-badge"><i class="fa-solid fa-map-pin"></i> Panduan Rute</span>
+                    <h3 class="fs-3 fw-bold">Lokasi Kantor Distrik Sorong Timur</h3>
+                    <p class="text-muted small">Kemudahan akses navigasi ke kantor distrik via Google Maps</p>
+                </div>
+
+                <div class="rounded-4 overflow-hidden shadow-lg border" style="height: 450px;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.47963212876!2d131.3101235!3d-0.8987412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d59556d78772a5b%3A0x6b290dfc6ff4d2c8!2sKantor%20Distrik%20Sorong%20Timur!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Peta Kantor Distrik Sorong Timur">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- FAQ SECTION -->
+            <div class="mt-5 pt-4">
+                <div class="text-center mb-5">
+                    <span class="section-badge badge-gold"><i class="fa-solid fa-circle-question"></i> Bantuan Cepat</span>
+                    <h3 class="fs-3 fw-bold">Pertanyaan yang Sering Diajukan (FAQ)</h3>
+                    <p class="text-muted small">Jawaban atas pertanyaan umum seputar pengurusan berkas di Kantor Distrik</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="accordion shadow-sm rounded-4 overflow-hidden border" id="faqAccordion">
+                            <!-- FAQ 1 -->
+                            <div class="accordion-item border-0 border-bottom">
+                                <h2 class="accordion-header" id="faqHeadingOne">
+                                    <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                                        Apakah ada biaya untuk pengurusan surat pengantar KTP, KK, atau SKTM?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small leading-relaxed">
+                                        <strong>Sama sekali TIDAK ADA BIAYA (Gratis / Rp 0).</strong> Seluruh pengurusan administrasi kependudukan di loket PATEN Kantor Distrik Sorong Timur bebas pungutan liar. Apabila ada oknum yang meminta imbalan, laporkan segera ke kanal pengaduan resmi.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="accordion-item border-0 border-bottom">
+                                <h2 class="accordion-header" id="faqHeadingTwo">
+                                    <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                        Berapa lama estimasi waktu proses penerbitan surat keterangan?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small leading-relaxed">
+                                        Untuk berkas yang persyaratan dan surat pengantar kelurahannya sudah lengkap, proses verifikasi dan penandatanganan di loket PATEN umumnya selesai dalam waktu <strong>15 hingga 30 menit</strong> pada hari kerja yang sama.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="accordion-item border-0 border-bottom">
+                                <h2 class="accordion-header" id="faqHeadingThree">
+                                    <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                        Apakah harus membawa pengantar dari Ketua RT dan Kelurahan sebelum ke Distrik?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small leading-relaxed">
+                                        Ya, sesuai mekanisme hierarki administrasi pemerintahan, pemohon diharapkan terlebih dahulu mengurus surat pengantar dari RT/RW dan kantor Kelurahan domisili (Klawuyuk, Klawalu, Kladufu, atau Klamana) sebelum dilegalisasi di tingkat Distrik.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header" id="faqHeadingFour">
+                                    <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                                        Bagaimana jika warga ingin menyampaikan aduan fasilitas jalan atau drainase rusak?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small leading-relaxed">
+                                        Warga dapat melapor melalui formulir di halaman ini, mengirim foto dan lokasi via WhatsApp Hotline (+62 812-3456-7890), atau melalui portal nasional SP4N-LAPOR!. Laporan akan diteruskan ke Seksi Pembangunan Distrik dan Dinas PUPR Kota Sorong.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/img/logo-distrik.svg" alt="Logo Distrik Sorong Timur" width="44" height="44">
+                        <div>
+                            <div class="footer-brand-title">DISTRIK SORONG TIMUR</div>
+                            <div class="text-warning small fw-semibold">Pemerintah Kota Sorong • Papua Barat Daya</div>
+                        </div>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 leading-relaxed">
+                        Mewujudkan Distrik Sorong Timur yang maju, inklusif, dan berbudaya dengan mengedepankan kearifan lokal serta tata kelola pemerintahan yang transparan.
+                    </p>
+                    <div class="small text-light opacity-75 mb-2">
+                        <i class="fa-solid fa-location-dot me-2 text-warning"></i> Jalan Poros, Km. 10, Kelurahan Klawuyuk, Kota Sorong, Papua Barat Daya 98416
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-heading">Navigasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="sejarah.html">Sejarah Distrik</a></li>
+                        <li><a href="visi-misi.html">Visi & Misi</a></li>
+                        <li><a href="organisasi.html">Struktur Organisasi</a></li>
+                        <li><a href="wilayah.html">Wilayah Demografi</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5 class="footer-heading">4 Kelurahan</h5>
+                    <ul class="footer-links">
+                        <li><a href="wilayah.html#kel-klawuyuk">Kelurahan Klawuyuk</a></li>
+                        <li><a href="wilayah.html#kel-klawalu">Kelurahan Klawalu</a></li>
+                        <li><a href="wilayah.html#kel-kladufu">Kelurahan Kladufu</a></li>
+                        <li><a href="wilayah.html#kel-klamana">Kelurahan Klamana</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Layanan Kontak</h5>
+                    <div class="small text-light opacity-80 mb-3">
+                        Senin - Jumat: 08.00 - 15.30 WIT<br>
+                        Telp: (0951) 123-456<br>
+                        Email: info@sorongtimur.go.id
+                    </div>
+                    <a href="kontak.html" class="btn btn-outline-light btn-sm rounded-pill px-3">
+                        <i class="fa-solid fa-headset me-1"></i> Hubungi Helpdesk
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <div>&copy; 2026 Kantor Distrik Sorong Timur. Semua Hak Cipta Dilindungi.</div>
+                <div class="small">Pemerintah Kota Sorong, Papua Barat Daya</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function updateLiveClock() {
+            const ticker = document.getElementById('live-time-ticker');
+            if (!ticker) return;
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Jayapura' };
+            const formatter = new Intl.DateTimeFormat('id-ID', options);
+            ticker.innerHTML = `<i class="fa-solid fa-clock me-1 text-warning"></i> ${formatter.format(now)} WIT`;
+        }
+        setInterval(updateLiveClock, 1000);
+        updateLiveClock();
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const alertBox = document.getElementById('contactAlert');
+            alertBox.classList.remove('d-none');
+            document.getElementById('contactForm').reset();
+            alertBox.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

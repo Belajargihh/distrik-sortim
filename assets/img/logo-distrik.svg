@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f3b75"/>
+      <stop offset="50%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#0a2540"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Circle Border -->
+  <circle cx="100" cy="100" r="94" fill="none" stroke="url(#goldGrad)" stroke-width="4" filter="url(#glow)"/>
+  <circle cx="100" cy="100" r="88" fill="url(#shieldGrad)"/>
+
+  <!-- Stars ring accent -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#60a5fa" stroke-width="1" stroke-dasharray="3,6"/>
+
+  <!-- Shield Shape (Tameng Adat Papua) -->
+  <path d="M100 26 C124 26 156 36 156 74 C156 122 100 168 100 168 C100 168 44 122 44 74 C44 36 76 26 100 26 Z" 
+        fill="#0a2540" stroke="url(#goldGrad)" stroke-width="3.5" filter="url(#glow)"/>
+
+  <!-- Red & White Flag Waves on Upper Shield -->
+  <path d="M52 64 C70 54 84 54 100 60 C116 66 130 66 148 56 L148 70 C130 80 116 80 100 74 C84 68 70 68 52 78 Z" fill="url(#redGrad)"/>
+  <path d="M52 78 C70 68 84 68 100 74 C116 80 130 80 148 70 L148 84 C130 94 116 94 100 88 C84 82 70 82 52 92 Z" fill="#f8fafc"/>
+
+  <!-- Papuan Tifa Motif (Silhouette) -->
+  <path d="M92 90 L108 90 L104 112 L108 132 L92 132 L96 112 Z" fill="url(#goldGrad)"/>
+  <ellipse cx="100" cy="90" rx="8" ry="2.5" fill="#fef08a"/>
+  <ellipse cx="100" cy="132" rx="8" ry="2.5" fill="#ca8a04"/>
+  <line x1="93" y1="102" x2="107" y2="120" stroke="#0a2540" stroke-width="1.2"/>
+  <line x1="107" y1="102" x2="93" y2="120" stroke="#0a2540" stroke-width="1.2"/>
+
+  <!-- Golden Laurel / Rice & Cotton Wreath (Kemakmuran) -->
+  <path d="M62 134 C54 112 56 86 64 68" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M138 134 C146 112 144 86 136 68" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Golden Star on Top -->
+  <polygon points="100,32 103,40 111,40 105,45 107,53 100,48 93,53 95,45 89,40 97,40" fill="url(#goldGrad)"/>
+
+  <!-- Text Ribbon Banner -->
+  <path d="M30 152 L170 152 L160 174 L40 174 Z" fill="url(#goldGrad)" filter="url(#glow)"/>
+  <polygon points="25,152 35,142 35,162" fill="#a16207"/>
+  <polygon points="175,152 165,142 165,162" fill="#a16207"/>
+
+  <!-- Banner text -->
+  <text x="100" y="167" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10.5" font-weight="900" fill="#0a2540" text-anchor="middle" letter-spacing="1.2">SORONG TIMUR</text>
+  <text x="100" y="184" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8" font-weight="800" fill="#fef08a" text-anchor="middle" letter-spacing="1">KOTA SORONG</text>
+</svg>
+

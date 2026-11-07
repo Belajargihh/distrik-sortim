@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Kegiatan - Distrik Sorong Timur, Kota Sorong</title>
+    <meta name="description" content="Dokumentasi foto kegiatan resmi, pelayanan administrasi masyarakat, pembangunan infrastruktur, dan aktivitas warga di Distrik Sorong Timur, Papua Barat Daya.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo-distrik.svg">
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6.5.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Modern Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div class="d-flex align-items-center flex-wrap gap-3">
+                    <span class="topbar-badge">
+                        <i class="fa-solid fa-shield-halved"></i> Portal Resmi Pemkot Sorong
+                    </span>
+                    <span class="d-none d-md-inline small text-light opacity-75">
+                        <i class="fa-regular fa-clock me-1 text-warning"></i> Jam Layanan: Sen - Jum 08.00 - 15.30 WIT
+                    </span>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <span id="live-time-ticker" class="small text-light opacity-90 d-none d-sm-inline">
+                        <i class="fa-solid fa-location-dot me-1 text-danger"></i> Sorong Timur, WIT
+                    </span>
+                    <span class="topbar-divider d-none d-sm-inline"></span>
+                    <a href="tel:0951123456" class="small"><i class="fa-solid fa-phone me-1"></i> (0951) 123-456</a>
+                    <span class="topbar-divider"></span>
+                    <a href="kontak.html" class="small"><i class="fa-solid fa-envelope me-1"></i> Bantuan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER & NAVBAR -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="brand-logo-wrap">
+                        <img src="assets/img/logo-distrik.svg" alt="Lambang Distrik Sorong Timur" width="40" height="40">
+                    </div>
+                    <div>
+                        <div class="brand-text-title">DISTRIK SORONG TIMUR</div>
+                        <div class="brand-text-sub">Kota Sorong • Papua Barat Daya</div>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Profil
+                            </a>
+                            <ul class="dropdown-menu shadow-lg border-0" aria-labelledby="profilDropdown">
+                                <li><a class="dropdown-item" href="sejarah.html"><i class="fa-solid fa-landmark text-primary"></i> Sejarah Distrik</a></li>
+                                <li><a class="dropdown-item" href="visi-misi.html"><i class="fa-solid fa-bullseye text-primary"></i> Visi & Misi</a></li>
+                                <li><a class="dropdown-item" href="organisasi.html"><i class="fa-solid fa-sitemap text-primary"></i> Struktur Organisasi</a></li>
+                                <li><a class="dropdown-item" href="wilayah.html"><i class="fa-solid fa-map-location-dot text-primary"></i> Wilayah & Kelurahan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#layanan-paten">Layanan Publik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="wilayah.html">Kelurahan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#berita">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="galeri.html">Galeri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontak.html">Kontak</a>
+                        </li>
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <a href="https://wa.me/6281234567890" target="_blank" class="btn-nav-cta">
+                                <i class="fa-brands fa-whatsapp fs-6"></i> Sapa Distrik
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero-modern">
+        <div class="page-hero-pattern"></div>
+        <div class="container position-relative">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fa-solid fa-house me-1"></i> Beranda</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Galeri</li>
+                </ol>
+            </nav>
+            <h1 class="display-5 fw-bold mb-2">Galeri Kegiatan & Dokumentasi</h1>
+            <p class="fs-6 text-light opacity-80 mb-0" style="max-width: 650px;">
+                Dokumentasi visual rangkaian kegiatan kedinasan, musyawarah pembangunan, bakti masyarakat, dan kebersamaan di Distrik Sorong Timur.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="py-5 bg-white">
+        <div class="container py-lg-4">
+            <!-- Filter Category Buttons -->
+            <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
+                <button type="button" class="gallery-filter-btn active" onclick="filterGallery('all', this)">
+                    <i class="fa-solid fa-layer-group me-1"></i> Semua Dokumentasi
+                </button>
+                <button type="button" class="gallery-filter-btn" onclick="filterGallery('pelayanan', this)">
+                    <i class="fa-solid fa-id-card me-1"></i> Pelayanan Publik (PATEN)
+                </button>
+                <button type="button" class="gallery-filter-btn" onclick="filterGallery('pembangunan', this)">
+                    <i class="fa-solid fa-helmet-safety me-1"></i> Pembangunan & Musrenbang
+                </button>
+                <button type="button" class="gallery-filter-btn" onclick="filterGallery('sosial', this)">
+                    <i class="fa-solid fa-users me-1"></i> Kegiatan Warga & Budaya
+                </button>
+                <button type="button" class="gallery-filter-btn" onclick="filterGallery('pemerintahan', this)">
+                    <i class="fa-solid fa-landmark me-1"></i> Kedinasan & Rapat
+                </button>
+            </div>
+
+            <!-- GALLERY GRID -->
+            <div class="row g-4" id="galleryContainer">
+                <!-- Foto 1: Gedung Utama -->
+                <div class="col-md-6 col-lg-4 gallery-item-wrap" data-category="pemerintahan">
+                    <div class="gallery-card" onclick="openLightbox('assets/img/Distrik.png', 'Gedung Kantor Distrik Sorong Timur', 'Pusat pelayanan administrasi dan koordinasi pemerintahan di Jl. Poros Km 10', 'Pemerintahan', '10 Nov 2025')">
+                        <div class="gallery-card-img-wrap">
+                            <img src="assets/img/Distrik.png" alt="Gedung Kantor Distrik Sorong Timur">
+                            <div class="gallery-hover-overlay">
+                                <div class="gallery-hover-icon">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <span class="badge bg-primary text-white mb-2 small">Pemerintahan</span>
+                            <h5 class="fs-6 fw-bold mb-1">Gedung Kantor Distrik Sorong Timur</h5>
+                            <p class="text-muted small mb-0"><i class="fa-regular fa-calendar me-1"></i> Dokumentasi Resmi 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 2: Kunjungan Pejabat -->
+                <div class="col-md-6 col-lg-4 gallery-item-wrap" data-category="pemerintahan">
+                    <div class="gallery-card" onclick="openLightbox('assets/img/Berita01.jpg', 'Kunjungan Kerja Kemendagri di Papua Barat Daya', 'Koordinasi tata kelola pemerintahan dan stabilitas wilayah tingkat distrik', 'Pemerintahan', '06 Nov 2025')">
+                        <div class="gallery-card-img-wrap">
+                            <img src="assets/img/Berita01.jpg" alt="Kunjungan Wamendagri">
+                            <div class="gallery-hover-overlay">
+                                <div class="gallery-hover-icon">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <span class="badge bg-primary text-white mb-2 small">Pemerintahan</span>
+                            <h5 class="fs-6 fw-bold mb-1">Kunjungan Kerja Tingkat Wilayah</h5>
+                            <p class="text-muted small mb-0"><i class="fa-regular fa-calendar me-1"></i> 06 November 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 3: Mitigasi Cuaca & Drainase -->
+                <div class="col-md-6 col-lg-4 gallery-item-wrap" data-category="pembangunan">
+                    <div class="gallery-card" onclick="openLightbox('assets/img/Berita02.jpeg', 'Pemantauan Drainase & Mitigasi Genangan', 'Petugas distrik memantau saluran air utama jalan raya pasca hujan lebat', 'Pembangunan', '06 Nov 2025')">
+                        <div class="gallery-card-img-wrap">
+                            <img src="assets/img/Berita02.jpeg" alt="Peninjauan Drainase">
+                            <div class="gallery-hover-overlay">
+                                <div class="gallery-hover-icon">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <span class="badge bg-success text-white mb-2 small">Pembangunan</span>
+                            <h5 class="fs-6 fw-bold mb-1">Peninjauan Jalur Drainase & Kebersihan</h5>
+                            <p class="text-muted small mb-0"><i class="fa-regular fa-calendar me-1"></i> 06 November 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 4: Sosialisasi Kesehatan -->
+                <div class="col-md-6 col-lg-4 gallery-item-wrap" data-category="sosial">
+                    <div class="gallery-card" onclick="openLightbox('assets/img/Berita03.jpg', 'Sosialisasi Kesehatan Masyarakat & Posyandu', 'Penyuluhan pola hidup sehat dan pencegahan stunting oleh Dinkes PBD bersama kader kelurahan', 'Kegiatan Sosial', '05 Nov 2025')">
+                        <div class="gallery-card-img-wrap">
+                            <img src="assets/img/Berita03.jpg" alt="Penyuluhan Kesehatan">
+                            <div class="gallery-hover-overlay">
+                                <div class="gallery-hover-icon">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <span class="badge bg-warning text-dark mb-2 small">Kegiatan Sosial</span>
+                            <h5 class="fs-6 fw-bold mb-1">Sosialisasi Posyandu & Kesehatan</h5>
+                            <p class="text-muted small mb-0"><i class="fa-regular fa-calendar me-1"></i> 05 November 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 5: Akses Jalan Poros -->
+                <div class="col-md-6 col-lg-4 gallery-item-wrap" data-category="pemerintahan">
+                    <div class="gallery-card" onclick="openLightbox('assets/img/Distrik1.png', 'Tampak Depan Kantor Distrik Sorong Timur', 'Pemandangan Kantor Distrik dari sisi Jalan Poros Km 10 Kelurahan Klawuyuk', 'Pemerintahan', '28 Okt 2025')">
+                        <div class="gallery-card-img-wrap">
+                            <img src="assets/img/Distrik1.png" alt="Kantor Distrik Sorong Timur tampak jalan">
+                            <div class="gallery-hover-overlay">
+                                <div class="gallery-hover-icon">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <span class="badge bg-primary text-white mb-2 small">Pemerintahan</span>
+                            <h5 class="fs-6 fw-bold mb-1">Akses Utama Kantor Distrik Km 10</h5>
+                            <p class="text-muted small mb-0"><i class="fa-regular fa-calendar me-1"></i> 28 Oktober 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 6: Pelayanan Loket PATEN (Unsplash Curated) -->
+                <div class="col-md-6 col-lg-4 gallery-item-wrap" data-category="pelayanan">
+                    <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80', 'Pelayanan Administrasi Terpadu (PATEN)', 'Petugas melayani pengurusan berkas kependudukan dan surat izin usaha warga', 'Pelayanan PATEN', '22 Okt 2025')">
+                        <div class="gallery-card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=600&q=80" alt="Pelayanan Loket PATEN">
+                            <div class="gallery-hover-overlay">
+                                <div class="gallery-hover-icon">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <span class="badge bg-info text-dark mb-2 small">Pelayanan PATEN</span>
+                            <h5 class="fs-6 fw-bold mb-1">Pelayanan Loket PATEN Terpadu</h5>
+                            <p class="text-muted small mb-0"><i class="fa-regular fa-calendar me-1"></i> 22 Oktober 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 7: Musrenbang Distrik -->
+                <div class="col-md-6 col-lg-4 gallery-item-wrap" data-category="pembangunan">
+                    <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80', 'Musyawarah Rencana Pembangunan (Musrenbang)', 'Rapat koordinasi usulan pembangunan tingkat 4 kelurahan bersama tokoh masyarakat', 'Pembangunan', '15 Okt 2025')">
+                        <div class="gallery-card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=600&q=80" alt="Musrenbang Distrik">
+                            <div class="gallery-hover-overlay">
+                                <div class="gallery-hover-icon">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <span class="badge bg-success text-white mb-2 small">Pembangunan</span>
+                            <h5 class="fs-6 fw-bold mb-1">Musyawarah Pembangunan (Musrenbang)</h5>
+                            <p class="text-muted small mb-0"><i class="fa-regular fa-calendar me-1"></i> 15 Oktober 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 8: Ekowisata Mangrove Klawalu -->
+                <div class="col-md-6 col-lg-4 gallery-item-wrap" data-category="sosial">
+                    <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1200&q=80', 'Pelestarian Kawasan Mangrove Klawalu', 'Aktivitas konservasi dan pendampingan wisata alam mangrove di Kelurahan Klawalu', 'Kegiatan Sosial', '10 Okt 2025')">
+                        <div class="gallery-card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=600&q=80" alt="Konservasi Mangrove">
+                            <div class="gallery-hover-overlay">
+                                <div class="gallery-hover-icon">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <span class="badge bg-warning text-dark mb-2 small">Kegiatan Sosial</span>
+                            <h5 class="fs-6 fw-bold mb-1">Konservasi Hutan Mangrove Klawalu</h5>
+                            <p class="text-muted small mb-0"><i class="fa-regular fa-calendar me-1"></i> 10 Oktober 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 9: Pembinaan UMKM Lokal -->
+                <div class="col-md-6 col-lg-4 gallery-item-wrap" data-category="sosial">
+                    <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80', 'Pelatihan Kewirausahaan & UMKM', 'Pendampingan usaha mikro kuliner dan kerajinan noken warga di Kelurahan Kladufu', 'Kegiatan Sosial', '01 Okt 2025')">
+                        <div class="gallery-card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80" alt="Pelatihan UMKM">
+                            <div class="gallery-hover-overlay">
+                                <div class="gallery-hover-icon">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <span class="badge bg-warning text-dark mb-2 small">Kegiatan Sosial</span>
+                            <h5 class="fs-6 fw-bold mb-1">Pelatihan Wirausaha UMKM Lokal</h5>
+                            <p class="text-muted small mb-0"><i class="fa-regular fa-calendar me-1"></i> 01 Oktober 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 overflow-hidden shadow-xl">
+                <div class="modal-header border-0 bg-dark text-white py-3 px-4">
+                    <div>
+                        <span id="modalCategory" class="badge bg-warning text-dark small mb-1">Kategori</span>
+                        <h5 class="modal-title fs-5 fw-bold" id="lightboxModalLabel">Detail Gambar</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 bg-black text-center">
+                    <img src="" id="lightboxImg" class="img-fluid w-100" style="max-height: 70vh; object-fit: contain;" alt="Pratinjau Foto">
+                </div>
+                <div class="modal-footer border-0 bg-light py-3 px-4 d-flex justify-content-between">
+                    <div>
+                        <p id="modalDesc" class="small text-muted mb-0">Keterangan foto</p>
+                    </div>
+                    <div>
+                        <span id="modalDate" class="small text-muted"><i class="fa-regular fa-calendar me-1"></i> Tanggal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/img/logo-distrik.svg" alt="Logo Distrik Sorong Timur" width="44" height="44">
+                        <div>
+                            <div class="footer-brand-title">DISTRIK SORONG TIMUR</div>
+                            <div class="text-warning small fw-semibold">Pemerintah Kota Sorong • Papua Barat Daya</div>
+                        </div>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 leading-relaxed">
+                        Mewujudkan Distrik Sorong Timur yang maju, inklusif, dan berbudaya dengan mengedepankan kearifan lokal serta tata kelola pemerintahan yang transparan.
+                    </p>
+                    <div class="small text-light opacity-75 mb-2">
+                        <i class="fa-solid fa-location-dot me-2 text-warning"></i> Jalan Poros, Km. 10, Kelurahan Klawuyuk, Kota Sorong, Papua Barat Daya 98416
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-heading">Navigasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="sejarah.html">Sejarah Distrik</a></li>
+                        <li><a href="visi-misi.html">Visi & Misi</a></li>
+                        <li><a href="organisasi.html">Struktur Organisasi</a></li>
+                        <li><a href="wilayah.html">Wilayah Demografi</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5 class="footer-heading">4 Kelurahan</h5>
+                    <ul class="footer-links">
+                        <li><a href="wilayah.html#kel-klawuyuk">Kelurahan Klawuyuk</a></li>
+                        <li><a href="wilayah.html#kel-klawalu">Kelurahan Klawalu</a></li>
+                        <li><a href="wilayah.html#kel-kladufu">Kelurahan Kladufu</a></li>
+                        <li><a href="wilayah.html#kel-klamana">Kelurahan Klamana</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Layanan Kontak</h5>
+                    <div class="small text-light opacity-80 mb-3">
+                        Senin - Jumat: 08.00 - 15.30 WIT<br>
+                        Telp: (0951) 123-456<br>
+                        Email: info@sorongtimur.go.id
+                    </div>
+                    <a href="kontak.html" class="btn btn-outline-light btn-sm rounded-pill px-3">
+                        <i class="fa-solid fa-headset me-1"></i> Hubungi Helpdesk
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <div>&copy; 2026 Kantor Distrik Sorong Timur. Semua Hak Cipta Dilindungi.</div>
+                <div class="small">Pemerintah Kota Sorong, Papua Barat Daya</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function updateLiveClock() {
+            const ticker = document.getElementById('live-time-ticker');
+            if (!ticker) return;
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Jayapura' };
+            const formatter = new Intl.DateTimeFormat('id-ID', options);
+            ticker.innerHTML = `<i class="fa-solid fa-clock me-1 text-warning"></i> ${formatter.format(now)} WIT`;
+        }
+        setInterval(updateLiveClock, 1000);
+        updateLiveClock();
+
+        // Category Filter Function
+        function filterGallery(category, button) {
+            // Update active button
+            document.querySelectorAll('.gallery-filter-btn').forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const items = document.querySelectorAll('.gallery-item-wrap');
+            items.forEach(item => {
+                const itemCat = item.getAttribute('data-category');
+                if (category === 'all' || itemCat === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Open Lightbox
+        function openLightbox(src, title, desc, cat, date) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightboxModalLabel').textContent = title;
+            document.getElementById('modalDesc').textContent = desc;
+            document.getElementById('modalCategory').textContent = cat;
+            document.getElementById('modalDate').innerHTML = `<i class="fa-regular fa-calendar me-1"></i> ${date}`;
+
+            const modal = new bootstrap.Modal(document.getElementById('lightboxModal'));
+            modal.show();
+        }
+    </script>
+</body>
+</html>
