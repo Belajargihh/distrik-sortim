@@ -1322,3 +1322,139 @@ a:hover {
     }
 }
 
+
+/* ==========================================================================
+   FLOATING ACTION BUTTONS (BACK TO TOP & WHATSAPP)
+   ========================================================================== */
+.floating-widgets {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1040;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.btn-floating-top {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--primary-800);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+}
+
+.btn-floating-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.btn-floating-top:hover {
+    background: var(--primary-600);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.4);
+}
+
+.btn-floating-wa {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #25d366;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    box-shadow: 0 4px 18px rgba(37, 211, 102, 0.45);
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    border: none;
+}
+
+.btn-floating-wa:hover {
+    background: #20ba5a;
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+.btn-floating-wa .wa-tooltip {
+    position: absolute;
+    right: 64px;
+    background: var(--slate-900);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-pill);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    pointer-events: none;
+    box-shadow: var(--shadow-md);
+}
+
+.btn-floating-wa:hover .wa-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-4px);
+}
+
+/* Modal Requirement List */
+.requirement-badge-free {
+    background: #ecfdf5;
+    color: #059669;
+    border: 1px solid #a7f3d0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-pill);
+}
+
+.requirement-badge-time {
+    background: #eff6ff;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-pill);
+}
+
+.alur-step-card {
+    background: var(--slate-50);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    border: 1px solid var(--slate-200);
+    text-align: center;
+    height: 100%;
+}
+
+.alur-step-num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--primary-600);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}

@@ -44,3 +44,4 @@ Buka file `index.html` langsung di peramban web (browser) favorit Anda seperti G
 
 ---
 © 2026 Pemerintah Distrik Sorong Timur, Kota Sorong, Papua Barat Daya.
+
